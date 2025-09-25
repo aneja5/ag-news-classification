@@ -527,7 +527,7 @@ for text in sample_texts:
 
 #### ✅ Example Output:
 - `NASA announces breakthrough discovery...` → `Sci/Tech`
-- `Stock market hits record high...` → B`usiness`
+- `Stock market hits record high...` → `Business`
 - `Manchester United wins...` → `Sports`
 - `UN calls for peace talks...` → `World`
 
@@ -593,20 +593,25 @@ Here are the key concepts I learned:
 ---
 
 ### 🔹 Linear Layer
-- Applies a simple transformation:  
-  $$
-  \mathbf{z} = W \mathbf{x} + \mathbf{b}
-  $$
-- Maps document embeddings → class scores (logits).  
+- Applies a simple transformation:
+
+$$
+\mathbf{z} = W \mathbf{x} + \mathbf{b}
+$$
+
+- Maps document embeddings → class scores (logits).
 
 ---
 
 ### 🔹 Cross-Entropy Loss
-- Encourages the true class probability to be as close to 1 as possible.  
-- Formula:  
-  $$
-  \text{CE}(\mathbf{z}, y) = -\log \frac{\exp(z_y)}{\sum_{k=1}^C \exp(z_k)}
-  $$
+
+Encourages the true class probability to be as close to 1 as possible.
+
+**Formula:**
+
+$$
+\text{CE}(\mathbf{z}, y) = -\log \frac{\exp(z_y)}{\sum_{k=1}^C \exp(z_k)}
+$$
 
 ---
 
