@@ -159,24 +159,24 @@ Our preprocessing pipeline has 4 key steps:
 
 ### 📐 Math Intuition: Embedding Matrix
 
-- **Embedding matrix:**
+The **embedding matrix** is:
 
-  $$
-  E \in \mathbb{R}^{V \times d}
-  $$
+$$
+E \in \mathbb{R}^{V \times d}
+$$
 
-  where:  
-  - $V$ = vocabulary size (~44K)  
-  - $d$ = embedding dimension (64 in our case)
+where:  
+- $V$ = vocabulary size (~44K)  
+- $d$ = embedding dimension (64 in our case)  
 
-- **Each word $w$ has a vector:**
+Each word $w$ has a vector:
 
-  $$
-  \mathbf{e}_w = E[w] \in \mathbb{R}^d
-  $$
+$$
+\mathbf{e}_w = E[w] \in \mathbb{R}^d
+$$
 
-- **Training effect:**  
-  Initially random, embeddings are updated during training so that words with similar meanings move closer together in vector space.
+**Training effect:**  
+Embeddings start random but are updated during training so that words with similar meanings move closer together in vector space.
 
 ---
 
